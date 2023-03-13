@@ -6,11 +6,11 @@ namespace SomethingWithTheDelegates
     {
         public static void Main(string[] args)
         {
-            Class2.ResultDelegate = Class2.Calc(Class2.PowDelegate, 2, 3);
-            Show(Class2.ResultDelegate);
+            var resultDelegate = Class2.Calc(Class2.PowDelegate, 2, 3);
+            Show(resultDelegate);
         }
 
-        public static void Show(Class2.ResultHandler value)
+        public static void Show(ResultHandler value)
         {
             bool result = value(2);
 

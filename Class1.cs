@@ -10,8 +10,6 @@ namespace SomethingWithTheDelegates
     {
         public static ShowHandler ShowDelegate = Program.Show;
 
-        public delegate void ShowHandler(Class2.ResultHandler t);
-
         public static int Pow(int firstValue, int secondValue)
         {
             int result = firstValue * secondValue;

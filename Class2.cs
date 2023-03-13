@@ -14,10 +14,6 @@ namespace SomethingWithTheDelegates
 
         private static int result = 0;
 
-        public delegate int PowHandler(int x, int y);
-
-        public delegate bool ResultHandler(int x);
-
         public static ResultHandler Calc(PowHandler delegat, int value1, int value2)
         {
             result = delegat(value1, value2);
